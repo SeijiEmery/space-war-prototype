@@ -13,5 +13,5 @@ func _integrate_forces (state):
 	state.linear_velocity = velocity
 
 func _on_Timer_timeout():
-	print("Killing projectile")
+	#print("Killing projectile")
 	get_parent().remove_child(self)

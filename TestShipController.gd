@@ -10,7 +10,7 @@ func _ready():
 	# Initialization here
 	pass
 
-func _process (delta):
+func _process (dt):
 	var move_vector = Vector2(
 		Input.get_joy_axis(0, JOY_AXIS_0),
 		-Input.get_joy_axis(0, JOY_AXIS_1))
@@ -23,7 +23,7 @@ func _process (delta):
 		
 	if look_vector.length() <= DEADZONE:
 		look_vector = Vector2(0, 0)
-		
-	$Ship.move(move_vector * delta)
+	
+	$Ship/Ship.move(move_vector, dt)
 	if look_vector.length() > 0.3:
-		$Ship.look(look_vector * delta)
+		$Ship/Ship.look(look_vector, dt)

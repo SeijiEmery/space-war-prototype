@@ -7,7 +7,7 @@ export(float) var projectile_speed = 500.0
 func setFireRate (rate):
 	fire_rate = rate
 	$Timer.wait_time = 1.0 / fire_rate
-	print("Set wait time: %s"%$Timer.wait_time)
+	#print("Set wait time: %s"%$Timer.wait_time)
 	
 func _ready ():
 	$Timer.wait_time = 1.0 / fire_rate
@@ -23,7 +23,7 @@ func set_firing (firing):
 		$Timer.stop()
 
 func _fire ():
-	print("FIRE!")
+	#print("FIRE!")
 	var p = projectile.instance()
 	var node = self
 	while node.get_parent():
