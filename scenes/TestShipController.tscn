@@ -6,6 +6,7 @@
 [node name="TestShipController" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
+_sections_unfolded = [ "Material", "Pause", "Visibility" ]
 DEADZONE = 0.1
 
 [node name="Ship" parent="." index="0" instance=ExtResource( 2 )]
