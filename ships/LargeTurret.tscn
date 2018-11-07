@@ -3,9 +3,10 @@
 [ext_resource path="res://ships/Turret.gd" type="Script" id=1]
 [ext_resource path="res://graphics/turret97.png" type="Texture" id=2]
 
-[node name="Turret" type="Node2D" index="0"]
+[node name="Turret" type="Node2D"]
 
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="turret97" type="Sprite" parent="." index="0"]
 
