@@ -6,14 +6,14 @@
 [sub_resource type="CapsuleShape2D" id=1]
 
 custom_solver_bias = 0.0
-radius = 3.33282
-height = 8.63142
+radius = 1.92463
+height = 6.25031
 
 [sub_resource type="AtlasTexture" id=2]
 
 flags = 4
 atlas = ExtResource( 2 )
-region = Rect2( 39.125, 25, 16, 24.75 )
+region = Rect2( 5, 37, 18, 22.5 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
 
@@ -38,7 +38,7 @@ linear_damp = -1.0
 angular_velocity = 0.0
 angular_damp = -1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Collision", "Pickable", "Transform", "Z Index" ]
+_sections_unfolded = [ "Collision" ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
@@ -46,13 +46,13 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="." index="1"]
 
-position = Vector2( 0.181183, 3.8147e-06 )
+position = Vector2( -0.589699, -0.67857 )
 texture = SubResource( 2 )
 
 [node name="Timer" type="Timer" parent="." index="2"]
 
 process_mode = 1
-wait_time = 10.0
+wait_time = 3.0
 one_shot = true
 autostart = true
 
