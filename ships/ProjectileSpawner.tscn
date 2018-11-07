@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ProjectileSpawner.gd" type="Script" id=1]
+[ext_resource path="res://ships/SmallProjectile.tscn" type="PackedScene" id=2]
+
+[node name="ProjectileSpawner" type="Node2D"]
+
+position = Vector2( 68.9549, 37.8765 )
+scale = Vector2( 0.0310567, 0.0290623 )
+script = ExtResource( 1 )
+projectile = ExtResource( 2 )
+fire_rate = 0.5
+projectile_speed = 500.0
+
+[node name="Timer" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+

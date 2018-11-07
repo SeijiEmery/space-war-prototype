@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://ships/Turret.gd" type="Script" id=1]
 [ext_resource path="res://graphics/turret97.png" type="Texture" id=2]
+[ext_resource path="res://ships/ProjectileSpawner.tscn" type="PackedScene" id=3]
 
 [node name="Turret" type="Node2D"]
 
@@ -10,7 +11,31 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="turret97" type="Sprite" parent="." index="0"]
 
-position = Vector2( -0.0902729, -6.52576 )
+position = Vector2( -0.00241089, -0.0448151 )
 texture = ExtResource( 2 )
+
+[node name="ProjectileSpawner" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( -10.6892, -23.9572 )
+fire_rate = 0.5
+projectile_speed = 500.0
+
+[node name="ProjectileSpawner2" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 10.3943, -23.6903 )
+fire_rate = 0.5
+projectile_speed = 500.0
+
+[node name="ProjectileSpawner3" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 6.79139, -31.2963 )
+fire_rate = 0.5
+projectile_speed = 500.0
+
+[node name="ProjectileSpawner4" parent="." index="4" instance=ExtResource( 3 )]
+
+position = Vector2( -6.95291, -30.4957 )
+fire_rate = 0.5
+projectile_speed = 500.0
 
 
