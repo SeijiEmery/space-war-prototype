@@ -17,25 +17,21 @@ texture = ExtResource( 2 )
 [node name="ProjectileSpawner" parent="." index="1" instance=ExtResource( 3 )]
 
 position = Vector2( -10.6892, -23.9572 )
-fire_rate = 0.5
-projectile_speed = 500.0
+fire_rate = 100
 
 [node name="ProjectileSpawner2" parent="." index="2" instance=ExtResource( 3 )]
 
 position = Vector2( 10.3943, -23.6903 )
-fire_rate = 0.5
-projectile_speed = 500.0
+fire_rate = 100
 
 [node name="ProjectileSpawner3" parent="." index="3" instance=ExtResource( 3 )]
 
 position = Vector2( 6.79139, -31.2963 )
-fire_rate = 0.5
-projectile_speed = 500.0
+fire_rate = 100
 
 [node name="ProjectileSpawner4" parent="." index="4" instance=ExtResource( 3 )]
 
 position = Vector2( -6.95291, -30.4957 )
-fire_rate = 0.5
-projectile_speed = 500.0
+fire_rate = 100
 
 

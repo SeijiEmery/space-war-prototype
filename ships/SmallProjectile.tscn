@@ -17,7 +17,7 @@ region = Rect2( 39.125, 25, 16, 24.75 )
 margin = Rect2( 0, 0, 0, 0 )
 filter_clip = false
 
-[node name="Projectile" type="RigidBody2D" index="0"]
+[node name="Projectile" type="RigidBody2D"]
 
 input_pickable = false
 collision_layer = 2

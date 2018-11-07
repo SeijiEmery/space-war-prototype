@@ -9,7 +9,7 @@ position = Vector2( 68.9549, 37.8765 )
 scale = Vector2( 0.0310567, 0.0290623 )
 script = ExtResource( 1 )
 projectile = ExtResource( 2 )
-fire_rate = 0.5
+fire_rate = 100
 projectile_speed = 500.0
 
 [node name="Timer" type="Timer" parent="." index="0"]

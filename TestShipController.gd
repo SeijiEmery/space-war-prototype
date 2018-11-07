@@ -24,7 +24,6 @@ func _process (delta):
 	if look_vector.length() <= DEADZONE:
 		look_vector = Vector2(0, 0)
 		
-	print(move_vector)
 	$Ship.move(move_vector * delta)
 	if look_vector.length() > 0.3:
 		$Ship.look(look_vector * delta)
