@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://TestShipController.gd" type="Script" id=1]
 [ext_resource path="res://ships/Cruiser.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ships/battlecruiser.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ships/Fighter.tscn" type="PackedScene" id=4]
 
 [node name="TestShipController" type="Node2D" index="0"]
 
@@ -11,6 +13,68 @@ DEADZONE = 0.1
 
 [node name="Ship" parent="." index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 540, 260 )
+position = Vector2( 558.604, 276.279 )
+
+[node name="battlecruiser-1" parent="." index="1" instance=ExtResource( 3 )]
+
+editor/display_folded = false
+position = Vector2( 4664.34, 1534.47 )
+
+[node name="battlecruiser-2" parent="." index="2" instance=ExtResource( 3 )]
+
+editor/display_folded = false
+position = Vector2( 1483.62, 543.857 )
+
+[node name="battlecruiser-3" parent="." index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 2752.03, 2342.12 )
+
+[node name="fighter-1" parent="." index="4" instance=ExtResource( 4 )]
+
+position = Vector2( 231.685, 483.602 )
+
+[node name="fighter-6" parent="." index="5" instance=ExtResource( 4 )]
+
+position = Vector2( 3.00935, 297.014 )
+
+[node name="fighter-8" parent="." index="6" instance=ExtResource( 4 )]
+
+position = Vector2( 121.982, 318.032 )
+
+[node name="fighter-7" parent="." index="7" instance=ExtResource( 4 )]
+
+position = Vector2( 404.434, 341.615 )
+
+[node name="fighter-2" parent="." index="8" instance=ExtResource( 4 )]
+
+position = Vector2( 288.037, 537.809 )
+
+[node name="fighter-3" parent="." index="9" instance=ExtResource( 4 )]
+
+position = Vector2( 146.317, 510.674 )
+
+[node name="fighter-4" parent="." index="10" instance=ExtResource( 4 )]
+
+position = Vector2( 61.7065, 410.094 )
+
+[node name="fighter-5" parent="." index="11" instance=ExtResource( 4 )]
+
+position = Vector2( 208.89, 587.576 )
+
+[node name="fighter-9" parent="." index="12" instance=ExtResource( 4 )]
+
+position = Vector2( 291.385, 670.567 )
+
+[node name="fighter-10" parent="." index="13" instance=ExtResource( 4 )]
+
+position = Vector2( 348.117, 595.156 )
+
+[node name="fighter-11" parent="." index="14" instance=ExtResource( 4 )]
+
+position = Vector2( 401.225, 523.503 )
+
+[node name="fighter-12" parent="." index="15" instance=ExtResource( 4 )]
+
+position = Vector2( 452.586, 447.113 )
 
 
